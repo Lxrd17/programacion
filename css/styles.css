@@ -273,7 +273,12 @@ sub {
 sup {
     top: -0.5em;
 }
-
+span{
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
 /* ------------------------------------------------------------------- 
  * ## embedded content
  * ------------------------------------------------------------------- */
@@ -488,7 +493,38 @@ svg, img, video embed, iframe, object {
     height: auto;
 }
 
-
+.fill {
+    background-image: -webkit-linear-gradient(rgb(255, 0, 0) 50%, white 50%);
+    background-repeat: repeat;
+    background-position: 0 0;
+    background-size: 100% 50px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-animation: stripes 2s linear infinite;
+    animation: stripes .6s linear infinite;
+  }
+  
+  @-webkit-keyframes stripes {
+    100% {
+      background-position: 0 -50px;
+    }
+  }
+  
+  @keyframes stripes {
+    100% {
+      background-position: 0 -50px;
+    }
+  }
+  .fill {
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    white-space: nowrap;
+    text-align: center;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
 /* ------------------------------------------------------------------- 
  * ## typography resets
  * ------------------------------------------------------------------- */
@@ -4813,3 +4849,4 @@ html.no-csstransitions .s-hero__content {
         font-size: 1.4rem;
     }
 }
+
