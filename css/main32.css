@@ -1,0 +1,44 @@
+@import url('animate.css');
+main > *{
+    background-color: chartreuse;
+    font-size: 30px;
+}
+main{
+    padding: 50px;
+    display: grid;
+    grid-gap: 20px;
+    text-align: center;
+    grid-template-areas: 
+    "footer"
+    "contenido"
+    "izquierda"
+    "derecha"
+    "header"
+    ;
+}
+@media (min-width: 500px){
+    main{
+        grid-template-areas: 
+        "header header header"
+        "izquierda contenido contenido"
+        "footer footer footer"
+        ;
+    }
+}
+header{
+    grid-area: header;
+    animation: bounce 1s infinite;
+}
+aside{
+    grid-area: izquierda;
+    animation: fadeInBottomLeft 2s infinite;
+    
+}
+article{
+    grid-area: contenido;
+    animation: fadeInBottomLeft 2s infinite;
+}
+footer{
+    grid-area: footer;
+    animation: bounceIn 1s infinite;
+}

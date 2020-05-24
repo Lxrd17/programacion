@@ -1,0 +1,21 @@
+body{
+    background-color: #ffff;
+}
+header{
+    background-color: aqua;
+}
+section{
+    background-color: blueviolet;
+}
+aside{
+    background-color: chartreuse;
+}
+.color1{
+    background-color: cornflowerblue;
+}
+footer{
+    color: black;
+    background-color: cyan;
+}
+
+

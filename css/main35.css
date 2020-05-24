@@ -1,0 +1,80 @@
+@import url('font/fonts.css');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    font-family: "SF Display";
+    font-size: 35px;
+}
+.container{
+    width: 1200px;
+    height: 500px;
+    position: center;
+    text-align: center;
+    font: outline;
+    border: .1px solid black;
+    background-color: red;
+    float: center;
+}
+.caja { 
+    font-family: "SF Display"; 
+    color: #ffffff; 
+    font-size: 18px; 
+    font-weight: 400; 
+    text-align: center; 
+    background: #889ccf; 
+    margin: 0 0 25px; 
+    overflow: hidden; 
+    padding: 20px; 
+    border-radius: 35px 0px 35px 0px; 
+    -moz-border-radius: 35px 0px 35px 0px; 
+    -webkit-border-radius: 35px 0px 35px 0px; 
+    border: 2px solid #5878ca;}
+.btn{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+}
+input{
+    font-family: "SF Display";
+}
+label{
+    font-family: "SF Display";
+    color: black;
+}.animate-bg:before, .animate-bg:after {
+	content: '';
+	position: absolute;
+	left: -8px;
+    top: -8px;
+    background: linear-gradient(120deg, #79fb00, #8d01a0, #031ba5,#ff004c,  
+    #e6036d, #fb0094,#ff6600, #04c2e4,#adad02, #00c3ff);
+	background-size: 300%;
+	width: calc(99% + 16px);
+	height: calc(100% + 16px);
+	z-index: -1;
+	animation: BGgradient 15s ease infinite; 
+}
+
+@keyframes BGgradient {
+	0% {
+		background-position: 0% 200%;
+	}
+	50% {
+		background-position: 200% 0%;
+	}
+	100% {
+		background-position: 0% 330%;
+	}
+}
+
+.animate-bg:after {
+    filter: brightness(1.4);
+    filter: drop-shadow(16px 16px 20px rgb(248, 220, 97));
+    filter: blur(15px);
+}
