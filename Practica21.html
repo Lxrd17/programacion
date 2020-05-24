@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Práctica 21</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main21.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <p>Nombre: <input type="text" name="nombre" required></p>
+    <p>E mail: <input type="text" name="nombre" value="@" required></p>
+    <p>Población: <input type="text" name="nombre" required></p>
+    <p>Sexo: <br>
+        <input type="radio" name="hm" value="h" required> Hombre <br>
+        <input type="radio" name="hm" value="m"> Mujer <br>
+      </p>
+      <p>Frecuencia de viajes <br>
+        <select name="menu">
+            <option>Varias veces al día</option>
+            <option>Una vez al día</option>
+            <option>Casi no viajo</option>
+            <option>No me gusta viajar</option>
+            <option>¿Que es viajar?</option>
+          </select>
+      </p>
+      <p>Comentario sobre su satisfacción en el viaje <br>
+        <textarea name="texto" rows="4" cols="40" placeholder="Escriba"></textarea>
+      </p>
+      <p>
+        <input type="checkbox" name="casilla">Deseo recibir notificaciones de novedades <br>
+      </p>
+      <p>
+        <input type="button" onclick="mensaje('Ha pulsado el botón')" value="Enviar">
+        <script>
+            function mensaje(texto) {
+              alert("Gracias por llenar nuestro formulario");
+            }
+          </script>
+      </p>
+      <p>
+        <input type="reset" value="Borrar">
+      </p>
+</body>
+</html>

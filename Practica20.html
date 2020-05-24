@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Práctica 20 - Formulario</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main20.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <table>
+        <caption>Tabla de formularios</caption>
+        <tr>
+            <th>Formulario 1</th>
+            <th>Formulario 2</th>
+            <th>Formulario 3</th>
+            <th>Formulario 4 </th>
+            <th>Formulario 5</th>
+        </tr>
+        <tr>
+            <td>
+                <!--El formulario: <form> html living standar´s recomedación html 5.2 mozzila
+                developer network un fomulario en un conjuntos de controles(botones, cajas de texto
+                casillas de verificación, boton de radio, etc), que permite al 
+            usuario y enviarlos al servidores web para su procesamiento-->
+                <form>
+                    <input type="checkbox" name="sistema" value="windows xp" required> windows XP<br>
+                    <input type="checkbox" name="sistema" value="windows xp" required> windows XP<br>
+                    <input type="checkbox" name="sistema" value="windows xp" required> windows Vista <br>
+                    <input type="checkbox" name="sistema" value="windows xp" required> windows 7 <br>
+                    <input type="checkbox" name="sistema" value="windows xp" required> windows 10<br>
+                    <input type="checkbox" name="sistema" value="windows xp" required> linux<br>
+                    <p><input type="Reset" value="Borrar todo"></p>
+                    <p><input type="submit" value="Enviar"><br></p>
+                </form>
+                <!--El atributo value permiter estabalecer el valor inicial
+                de un control, que cada control lo utiliza de una forma ligeramente distinta
+            y algunos controles no lo admiten(area de texto, archivo o imagen y cieras)
+        el atributo required permite inicar que cotroles es obligatoio para llenar para enviar -->
+            </td>
+            <td>
+                <form>
+                    <p>Sexo <br>
+                        <input type="radio" name="hm" value="h" required>hombre <br>
+                        <input type="radio" name="hm" value="m"> Mujer <br></p>
+                    <p>Edad <br>
+                        <input type="radio" name="edad" value="meno" size="40"> Menor <br>
+                        <input type="radio" name="edad" value="adulto" required> Adulto <br></p>
+                    <p>Casa propia <br>
+                        <input type="radio" name="Casa" value="Si"> Menor <br>
+                        <input type="radio" name="Casa" value="No" required> Adulto <br>
+                        <p><input type="Reset" value="Borrar todo"></p>
+                        <p><input type="submit" value="Enviar"><br></p>
+                    </p>
+                </form>
+            </td>
+            <td>
+                <form>
+                    <!--El atributo placeholder ermite mosrrare n lo vontroles de
+                    trextmuqu desaperece a escribir en el corol.abajo
+                el tributo size prmite esstablecer la olojntu e los vontroes de gexto
+            (text, paswwor, sesrch, etc.)Por omiviod como as casjas uelne ener
+        30 caracteresde logitud-->
+                    <p>Nombres:
+                        <input type="text" name="apellidos" size="40" placeholder="Ej. Junanito">
+                        <p>Apellios:
+                            <input type="text" name="apellidos" size="40" placeholder="ej. Meneses">
+                            <p>Diercciòn:
+                                <input type="text" name="appellido" size="40" placeholder="Solo si eres de MilpaYork">
+                                <input type="text" name="texto" value="Soy del 4PB!" readonly></p>
+                            <input type="text" name="texto" placeholder="SOY DEL 4PA!" readonly>
+                            <!--El atribu readonly hace que el control nos sea
+                                    modificable, auqeu el controlpuede cojer el foco-->
+                            <p><input type="reset" value="borrar todo"></p>
+                            <p><input type="submit" value="Enviar"></p><br></p>
+                    </p>
+                </form>
+            </td>
+            <td>
+                <!--El atributo acces key establece la tecla que coloca el foco
+                en un elemtno formulario, peroluego en chromme firefox y microsof
+            edge no utilixan los mismos atajos de teclado, como se comenta en la leccion de
+            diferencias entre navegadores-
+        Firefox utiliza la cobnacion alt+dhit+tecla
+    Googlr chrome utilizn normalmente la combinacion Alt+Shift+tecla, pero tambien permite la
+    a combinacion Alt+Shift+teclado cuando no esta asociada a  inguna accion_
+    En el ejemplo siguiente firefox utiliza l combinacion Alt+Shift+teclado para situar el
+     cursor en las cajas de texto,Google chrome utiliza la combinacion Alt+tecla y dge utiliza ambas:-->
+
+                <form>
+
+                    <input type="text" name="texto1" placeholder="Texto 1"></p>
+                    <input type="text" name="texto2" placeholder="Texto 2"></p>
+                    <input type="text" name="texto3" placeholder="Texto 3"></p>
+                    <input type="text" name="texto4" placeholder="Texto 4"></p>
+                    <input type="text" name="texto1" placeholder="Acceso con a"></p>
+                    <input type="text" name="texto1" placeholder="Acceso con i"></p>
+                    <input type="text" name="texto1" placeholder="Acceso con o"></p>
+                    <input type="text" name="texto1" placeholder="Acceso con u"></p>
+
+                </form>
+            </td>
+            <td>
+                <!--Los atributos maxlenght y minlength permiten establecer la longitud maxima y minima,respectivamente,
+        que puede el usuario en un control de txto(text, paswrd,search,etc...).-->
+                <form>
+                    <p>Usuario: <input type="text" name="usuario" maxlength=6></p>
+                    <p> Contraseña: <input type="password" name="password" minlength=6></p>
+                    <p><input type="submit" value="Borrar todo"></p>
+                    <input type="submit" value="Enviar Formulario"></p>
+                    <br></td>
+        </tr>
+    </table><br>
+
+</body>
+
+</html>
