@@ -525,6 +525,17 @@ svg, img, video embed, iframe, object {
     -ms-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
   }
+
+  #stat{
+      text-align: center;
+      transition: .3s;
+      color: black;
+  }
+  #stat:hover{
+      transition: .3s;
+      color: black;
+      background-color: rgb(0, 0, 0);
+  }
 /* ------------------------------------------------------------------- 
  * ## typography resets
  * ------------------------------------------------------------------- */
@@ -2552,6 +2563,7 @@ input::-moz-focus-inner {
 }
 
 
+
 /* ------------------------------------------------------------------- 
  * ## skillbars
  * ------------------------------------------------------------------- */
@@ -3368,10 +3380,7 @@ input::-moz-focus-inner {
 }
 
 .s-hero__bg {
-    background-image: url("../images/hero-bg.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    animation: banner 5s ease-in-out infinite;
     position: absolute;
     top: 0;
     right: 0;
@@ -3402,7 +3411,41 @@ input::-moz-focus-inner {
     background: linear-gradient(180deg, black 10%, rgba(0, 0, 0, 0) 100%);
     opacity: .35;
 }
-
+@keyframes banner{
+	0%{
+        background-image: url('../images/main33-1.jfif');
+        background-position: bottom;
+        background-repeat: no-repeat;
+	}
+	25%{
+        background-image: url('../images/main33-1.jfif');
+        background-repeat: no-repeat;
+	}
+	26%{
+        background-image: url('../images/main33-2.jfif');
+        background-repeat: no-repeat;
+	}
+	50%{
+        background-image: url('../images/main33-2.jfif');
+        background-repeat: no-repeat;
+	}
+	51%{
+        background-image: url('../images/main33-3.jfif');
+        background-repeat: no-repeat;
+	}
+	75%{
+        background-image: url('../images/main33-3.jfif');
+        background-repeat: no-repeat;
+	}	
+	76%{
+        background-image: url('../images/b1.jfif');
+        background-repeat: no-repeat;
+	}
+	100%{
+        background-image: url('../images/b1.jfif');
+        background-repeat: no-repeat;
+	}
+}
 
 /* ------------------------------------------------------------------- 
  * ## hero content
